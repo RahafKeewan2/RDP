@@ -1,0 +1,50 @@
+name: Convert DOCX to Markdown
+
+on:
+  push:
+    paths:
+      - "**/*.docx"
+      - ".github/workflows/docx-to-md.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Convert .docx to Markdown (GFM)
+        shell: bash
+        run: |
+          mkdir -p docs
+          shopt -s globstar nullglob
+          converted=0
+          for f in **/*.docx; do
+            base="$(basename "$f" .docx)"
+            out="docs/${base}.md"
+            echo "Converting $f -> $out"
+            pandoc "$f" -t gfm --extract-media="docs/media" -o "$out"
+            converted=1
+          done
+          if [ "$converted" -eq 0 ]; then
+            echo "No .docx files found."
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A docs
+            git commit -m "chore: convert DOCX to Markdown"
+            git push
+          else
+            echo "No changes to commit."
