@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CheckValidator" xml:space="preserve">
+    <value>يجب تعبئة الخانات المطلوب قبل عملية الحفظ</value>
+  </data>
+  <data name="AbsencePrivilegesFailed" xml:space="preserve">
+    <value>لا توجد لك صلاحية لإدخال المخالفات.</value>
+  </data>
+  <data name="AbsenceLevelRelatedWithViolationsYouCantModifyIt" xml:space="preserve">
+    <value>لا يمكنك تعديل مستوى الغياب بسبب وجود مخالفات مرتبطة فيه</value>
+  </data>
+  <data name="EnterViolation" xml:space="preserve">
+    <value>لا يمكنك ارسال رسالة لهذا الطالب ما لم تقم بإدخال مخالفه له. </value>
+  </data>
+  <data name="MarksEntryPeriodClosed" xml:space="preserve">
+    <value>لا تستطيع ادخال مخالفات لان فترة ادخال العلامات مغلقة</value>
+  </data>
+  <data name="HoursInstalledForTheDay" xml:space="preserve">
+    <value>لا يمكن إدخال الانضباط المدرسي و الالتزام بالدوام المدرسي، لأنه تم تثبيت الدوام لهذا اليوم.</value>
+  </data>
+  <data name="gvTeacherClassesResource1.NoRowsWarningMessage" xml:space="preserve">
+    <value>لم يتم ريطك بهذا الشعبة بعد</value>
+  </data>
+  <data name="rblWithOutExcuse" xml:space="preserve">
+    <value>دون عذر</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>دون عذر</value>
+  </data>
+  <data name="HolidayError" xml:space="preserve">
+    <value>لا يمكن إضافة مخالفات في ايام العطل</value>
+  </data>
+  <data name="lbtnAbsencesResource1.Text" xml:space="preserve">
+    <value>مخالفات</value>
+  </data>
+  <data name="ViolationTypeResource.HeaderText" xml:space="preserve">
+    <value>نوع الانضباط</value>
+  </data>
+  <data name="lblViolationTypeResource1.Text" xml:space="preserve">
+    <value>نوع المخالفة</value>
+  </data>
+  <data name="ViolationType" xml:space="preserve">
+    <value>نوع الغياب</value>
+  </data>
+  <data name="rblAbsence" xml:space="preserve">
+    <value>مخالفة</value>
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.TotalRowsCountMessage" xml:space="preserve">
+    <value>Total rows count: </value>
+  </data>
+  <data name="gvTeacherClassesResource1.TotalRowsCountMessage" xml:space="preserve">
+    <value>Total rows count: </value>
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.TotalRowsCountMessage" xml:space="preserve">
+    <value>Total rows count: </value>
+  </data>
+  <data name="AbsenceTipViolation" xml:space="preserve">
+    <value>لتسجيل مخالفة ضع علامة على يمين إسم الطالب، ثم اختر نوع المخالفة</value>
+  </data>
+  <data name="AbsenceTipPositive" xml:space="preserve">
+    <value>لتسجيل ايجابية ضع علامة على يمين إسم الطالب، ثم اختر نوع الايجابية</value>
+  </data>
+  <data name="lblToAddNewExamcommitteeResource1.Text" xml:space="preserve">
+    <value>لطباعة كشف مخالفات فارغ،</value>
+  </data>
+  <data name="lblGuideMessageFilteringResource1.Text" xml:space="preserve">
+    <value>لإدخال الانضباط المدرسي والالتزام بالدوام المدرسي، اختر معايير البحث ومن ثم أنقر (ابحث)</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="lblCourseNameResource1.Text" xml:space="preserve">
+    <value>لا يوجد مبحث.</value>
+  </data>
+  <data name="gvViolationsResourcesKeys.NoDataSourceMessage" xml:space="preserve">
+    <value>لم يتمكن النظام من الاتصال مع قاعدة البيانات، الرجاء إعادة المحاولة لاحقاً.</value>
+  </data>
+  <data name="gvTeacherClassesResource1.NoDataSourceMessage" xml:space="preserve">
+    <value>لم يتمكن النظام من الاتصال مع قاعدة البيانات، الرجاء إعادة المحاولة لاحقاً.</value>
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.NoDataSourceMessage" xml:space="preserve">
+    <value>لم يتمكن النظام من الاتصال مع قاعدة البيانات، الرجاء إعادة المحاولة لاحقا.</value>
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.NoDataSourceMessage" xml:space="preserve">
+    <value>لم يتمكن النظام من الاتصال مع قاعدة البيانات، الرجاء إعادة المحاولة لاحقاً.</value>
+  </data>
+  <data name="OneDayViolationsExistInTheSameDay" xml:space="preserve">
+    <value>يوجد مخالفة يوم كامل في نفس اليوم</value>
+  </data>
+  <data name="LectureViolationExistInTheSameDay" xml:space="preserve">
+    <value>يوجد مخالفة حصة في نفس اليوم</value>
+  </data>
+  <data name="NoViolation" xml:space="preserve">
+    <value>  لا يوجد مخالفات في هذا اليوم</value>
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.NoRowsWarningMessage" xml:space="preserve">
+    <value>لا يوجد طلبة وفقاً لمعايير البحث.</value>
+  </data>
+  <data name="NoStudentRelatedToThisSections" xml:space="preserve">
+    <value>لا يوجد طلبة مرتبطين بهذا الشعبة </value>
+  </data>
+  <data name="NoActiveSemesterExist" xml:space="preserve">
+    <value>لا يوجد فصل فعال في التقويم المدرسي لهذه المرحلة</value>
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.NoRowsWarningMessage" xml:space="preserve">
+    <value>لا يوجد طلبة مرتبطين بهذا الشعبة</value>
+  </data>
+  <data name="lblNoDataFoundResource1.Text" xml:space="preserve">
+    <value>لا يوجد طلبة مرتبطين بهذا الشعبة</value>
+  </data>
+  <data name="NoPositives" xml:space="preserve">
+    <value>لا يوجد ايجابيات  في هذا اليوم</value>
+  </data>
+  <data name="gvViolationsResourcesKeys.NoRowsWarningMessage" xml:space="preserve">
+    <value>لا يوجد حصص في هذا اليوم</value>
+  </data>
+  <data name="UpdateSuccessfully" xml:space="preserve">
+    <value>تمت عملية تعديل المخالفة بنجاح.</value>
+  </data>
+  <data name="AddSuccessfully" xml:space="preserve">
+    <value>تمت عملية الحفظ بنجاح.</value>
+  </data>
+  <data name="SaveSuccessfully" xml:space="preserve">
+    <value>تمت عملية الحفظ بنجاح.</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>تمت عملية الحفظ بنجاح </value>
+  </data>
+  <data name="ValidationDateMessage" xml:space="preserve">
+    <value>يجب ان يكون التاريخ ضمن تاريخ بداية ونهاية الفصل</value>
+  </data>
+  <data name="lblStudySytemResource1.Text" xml:space="preserve">
+    <value>النظام الدراسي</value>
+  </data>
+  <data name="lblStudySystemTitle.Text" xml:space="preserve">
+    <value>النظام الدراسي</value>
+  </data>
+  <data name="lblStudentsResource1.Text" xml:space="preserve">
+    <value>الطلبة</value>
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.InitialSortExpression" xml:space="preserve">
+    <value>StudentName</value>
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.InitialSortExpression" xml:space="preserve">
+    <value>StudentFullName</value>
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+  <data name="StudentNameResource.HeaderText" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+  <data name="BoundFieldResourceName.HeaderText" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+  <data name="BehaviourLevel" xml:space="preserve">
+    <value>سجل الإنضباط المدرسي للطالب </value>
+  </data>
+  <data name="MudabaLevel" xml:space="preserve">
+    <value> سجل الالتزام بالدوام المدرسي للطالب مستوى   </value>
+  </data>
+  <data name="lblAttendanceHistoryTitleResource1.Text" xml:space="preserve">
+    <value>سجل إدخال الانضباط المدرسي و الالتزام بالدوام المدرسي للطالب</value>
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>المرحلة / القسم / المسار</value>
+  </data>
+  <data name="SendSMS.Text" xml:space="preserve">
+    <value>إرسال رسالة</value>
+  </data>
+  <data name="ChooseViolation" xml:space="preserve">
+    <value>أختر</value>
+  </data>
+  <data name="BoundFieldResource4.HeaderText" xml:space="preserve">
+    <value>الشعبة</value>
+  </data>
+  <data name="gvTeacherClassesResource1.InitialSortExpression" xml:space="preserve">
+    <value>SchoolDescription</value>
+  </data>
+  <data name="ConfirmMessageTitle" xml:space="preserve">
+    <value>حفظ التأخير والغياب للطلبة</value>
+  </data>
+  <data name="PositiveType" xml:space="preserve">
+    <value>تعزيزات السلوك الايجابي</value>
+  </data>
+  <data name="rfvAttendanceDayResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر تاريخ المخالفات</value>
+  </data>
+  <data name="rfvDateResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر التاريخ.</value>
+  </data>
+  <data name="ChooseViolationType" xml:space="preserve">
+    <value>اختر نوع الانضباط</value>
+  </data>
+  <data name="rfvViolationTypeResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر نوع المخالفة.</value>
+  </data>
+  <data name="rfvDegreeDeductAmountResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر نوع المخالفة.</value>
+  </data>
+  <data name="rfvddlVaiolationTypeResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر المخالفة.</value>
+  </data>
+  <data name="rfvStudySystem.ErrorMessage" xml:space="preserve">
+    <value>اختر النظام الدراسي.</value>
+  </data>
+  <data name="rfvStudySystemResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر النظام الدراسي.</value>
+  </data>
+  <data name="ChoosePositivityType" xml:space="preserve">
+    <value>اختر نوع تعزيزات السلوك الايجابي</value>
+  </data>
+  <data name="rvDeductTypeResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر نوع التقييم.</value>
+  </data>
+  <data name="rfvMudabaCoursesResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر نوع الرصد.</value>
+  </data>
+  <data name="rfvLessonResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر الحصة.</value>
+  </data>
+  <data name="rfvLectureResource1.ErrorMessage" xml:space="preserve">
+    <value>اختر الحصة.</value>
+  </data>
+  <data name="AddAtendanceWarning" xml:space="preserve">
+    <value>اختر طالب واحد على الأقل، لإضافة مخالفة</value>
+  </data>
+  <data name="lblNavigationGuideResource1.Text" xml:space="preserve">
+    <value>الرجاء حفظ البيانات المدخلة قبل الأنتقال إلى أية صفحة أخرى.</value>
+  </data>
+  <data name="rfvLateMinuteResource1.ToolTip" xml:space="preserve">
+    <value>أدخل الدقائق</value>
+  </data>
+  <data name="rfvtbLateHourResource1.ToolTip" xml:space="preserve">
+    <value>أدخل الساعات</value>
+  </data>
+  <data name="revtbLateMinuteResource1.ToolTip" xml:space="preserve">
+    <value>أدخل عدد صحيح</value>
+  </data>
+  <data name="Options.HEaderText" xml:space="preserve">
+    <value>الخيارات</value>
+  </data>
+  <data name="lblNoteTitleResource1.Text" xml:space="preserve">
+    <value>ملاحظة</value>
+  </data>
+  <data name="cvtbLateMinuteResource1.ToolTip" xml:space="preserve">
+    <value>يجب ان تكون الدقائق رقم صحيح واقل من 60دقيقة</value>
+  </data>
+  <data name="cvLateMinutes" xml:space="preserve">
+    <value>يجب ان تكون الدقائق رقم صحيح واقل من 60دقيقة</value>
+  </data>
+  <data name="lblMinuteResource1.Text" xml:space="preserve">
+    <value>بالدقيقة</value>
+  </data>
+  <data name="LateMinutes" xml:space="preserve">
+    <value>د</value>
+  </data>
+  <data name="MuadabaTitle" xml:space="preserve">
+    <value>سجل</value>
+  </data>
+  <data name="LateHour" xml:space="preserve">
+    <value>س</value>
+  </data>
+  <data name="cvtbLateHourResource1.ToolTip" xml:space="preserve">
+    <value>يجب ان تكون الساعات رقم صحيح واقل من 5 ساعات</value>
+  </data>
+  <data name="cvLateHour" xml:space="preserve">
+    <value>يجب ان تكون الساعات رقم صحيح واقل من 5 ساعات</value>
+  </data>
+  <data name="lblHourResource1.Text" xml:space="preserve">
+    <value>بالساعة</value>
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>الصف</value>
+  </data>
+  <data name="EnableFlag" xml:space="preserve">
+    <value>تم ادخال مخالفة يوم كامل او تم نسخ المخالفات</value>
+  </data>
+  <data name="IsDerived" xml:space="preserve">
+    <value>تم ادخال مخالفة يوم كامل</value>
+  </data>
+  <data name="TemplateFieldResource5.HeaderText" xml:space="preserve">
+    <value>عذر/ دون عذر</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>عذر</value>
+  </data>
+  <data name="rblWithExcuse" xml:space="preserve">
+    <value>عذر</value>
+  </data>
+  <data name="lblDeductTypeResource1.Text" xml:space="preserve">
+    <value>نوع الانضباط</value>
+  </data>
+  <data name="rblLate" xml:space="preserve">
+    <value>: تأخير</value>
+  </data>
+  <data name="LateDuration" xml:space="preserve">
+    <value>مدة التأخير</value>
+  </data>
+  <data name="LateDurationResource2.Text" xml:space="preserve">
+    <value>مدة التأخير</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>تأخير</value>
+  </data>
+  <data name="lblTitleModubaCoursesResource1.Text" xml:space="preserve">
+    <value>نوع رصد</value>
+  </data>
+  <data name="lblDateResource1.Text" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="lblSelectDayResource1.Text" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="lblCourseResource1.Text" xml:space="preserve">
+    <value>المبحث</value>
+  </data>
+  <data name="IsConfirmed" xml:space="preserve">
+    <value>تم ادخال مخالفة حصة</value>
+  </data>
+  <data name="lblLessonResource1.Text" xml:space="preserve">
+    <value>الحصة</value>
+  </data>
+  <data name="BoundFieldResourceLecture.HeaderText" xml:space="preserve">
+    <value>الحصة</value>
+  </data>
+  <data name="lblLectureResource1.Text" xml:space="preserve">
+    <value>الحصة</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>إدخال الانضباط المدرسي والالتزام بالدوام المدرسي</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>إدخال الانضباط المدرسي والالتزام بالدوام المدرسي</value>
+  </data>
+  <data name="TitleMuadaba" xml:space="preserve">
+    <value>سجل الالتزام بالدوام المدرسي</value>
+  </data>
+  <data name="lblSelectedSectionResource1.Text" xml:space="preserve">
+    <value>سجل الحضور والغياب</value>
+  </data>
+  <data name="ConfirmMessageBody" xml:space="preserve">
+    <value>هل أنت متأكد من حفظ التأخير والغياب للطلبة قبل الطباعة؟</value>
+  </data>
+  <data name="AddFailed" xml:space="preserve">
+    <value>حدث خلل أثناء إضافة المخالفة، الرجاء إعادة المحاولة لاحقاً.</value>
+  </data>
+  <data name="SaveFaild" xml:space="preserve">
+    <value>حدث خطأ اثناء عملية الحفظ</value>
+  </data>
+  <data name="SaveError" xml:space="preserve">
+    <value>حدث خلل أثناء تنفيذ عملية الحفظ.</value>
+  </data>
+  <data name="TemplateFieldResource4.HeaderText" xml:space="preserve">
+    <value>غياب/ تأخير</value>
+  </data>
+  <data name="lblTitleViolation.Text" xml:space="preserve">
+    <value>نوع الغياب</value>
+  </data>
+  <data name="CanNotAddAbsent" xml:space="preserve">
+    <value>لا يمكن إضافة غياب في فصل غير فعال</value>
+  </data>
+  <data name="ConnotAddAbsenceInSectionNotActive" xml:space="preserve">
+    <value>لا يمكن أضافة غياب في شعبة غير فعال.</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>غياب</value>
+  </data>
+  <data name="CantSendMessage" xml:space="preserve">
+    <value>لقد تم ارسال رسالة من قبل.</value>
+  </data>
+  <data name="ConfirmWidth" xml:space="preserve">
+    <value>400</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ConfirmHeight" xml:space="preserve">
+    <value>110</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rvLateHour" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rvLateMniuteErrorMessage" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="cbCheckFlageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAbsenceTipResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAttendanceHistoryTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCourseNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbCheckFlageAllResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCourseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchResualtResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLessonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgBulletResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgBulletResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgBullet0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLectureResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvStudySystemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLessonResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvLectureResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvStudySystemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgBullet0Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserInformationsCCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorSelectAttendanceReasonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOperationResultResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLessonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLectureResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvTeacherClassesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGuideMessageFilteringResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOperationResultResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOperationResualtResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorSelectAttendanceReasonResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOperationResualtResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rblAbsenceLateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvTeacherClassesResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvTeacherClassesResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rblExcuseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbCheckFlageAllResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbtnStudentFullNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbCheckFlageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbHeaderResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvStudentLectureVaiolationsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbtnAbsencesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbItemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gvClassStudentsAttendanceResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlStudySystemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbHeaderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectedSectionTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clrAttendanceDayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlVaiolationTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStudySytemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MasterPageURL" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectedSectionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clrViolationDayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectedSectionTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvddlVaiolationTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchResualtResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvddlVaiolationTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvAttendanceDayResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLectureResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clrViolationDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clrAttendanceDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvAttendanceDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rvViolationResource.ErrorMessage" xml:space="preserve">
+    <value>اختر نوع الغياب.</value>
+  </data>
+  <data name="lblNoViolationConfirmation.Text" xml:space="preserve">
+    <value>لتأكيد عدم وجود غياب لليوم الموافق {0}، </value>
+  </data>
+  <data name="ConfirmationBoxDimensions" xml:space="preserve">
+    <value>380,110</value>
+  </data>
+  <data name="ConfirmationMsg" xml:space="preserve">
+    <value>هل أنت متأكد من تأكيد عدم وجود غياب لليوم الموافق {0} ،وأتحمل كامل المسؤولية في حال أن البيانات المدخلة غير صحيحة؟</value>
+  </data>
+  <data name="ConfirmationTitle" xml:space="preserve">
+    <value>تأكيد عدم وجود غياب</value>
+  </data>
+  <data name="ConfirmationFailed" xml:space="preserve">
+    <value>حدث خطأ أثناء تأكيد الغياب، الرجاء المحاولة لاحقاً.</value>
+  </data>
+  <data name="ConfirmationSucceed" xml:space="preserve">
+    <value>تمت عملية تأكيد عدم وجود غياب بنجاح.</value>
+  </data>
+  <data name="NoViolationsConfirmed" xml:space="preserve">
+    <value>تم تأكيد عدم وجود غياب لهذا اليوم من قبل</value>
+  </data>
+  <data name="ClassDesc.HeaderText" xml:space="preserve">
+    <value>الصف</value>
+  </data>
+  <data name="SectionDesc.HeaderText" xml:space="preserve">
+    <value>الشعبة</value>
+  </data>
+  <data name="SpecialtyDesc.HeaderText" xml:space="preserve">
+    <value>المرحلة / القسم / المسار</value>
+  </data>
+  <data name="ConfirmedViolationsExist" xml:space="preserve">
+    <value>تم إدخال غياب الطلبة لهذا اليوم</value>
+  </data>
+  <data name="EditDisabled" xml:space="preserve">
+    <value>لا يمكن تعديل الغياب لهذا اليوم</value>
+  </data>
+  <data name="CannotConfirm" xml:space="preserve">
+    <value>لا يمكن تأكيد عدم وجود غياب لهذا اليوم</value>
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>&lt;p align="center" class="InstructionsBold"&gt;
+                        إرشادات هامة&lt;/p&gt;
+                    &lt;p class="InstructionsBold"&gt;
+                        تساعدك الإرشادات التالية في عملية إدخال الانضباط المدرسي والالتزام بالدوام المدرسي للطلبة :
+                    &lt;/p&gt;
+                    &lt;p class="StandardFontPlain" style="text-align: justify;"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;في حال عدم وجود غياب للطلبة تستطيع التأكيد على متابعة المدرسة للحضور والغياب في اليوم الحالي بنقر الرابط (لتأكيد عدم وجود غياب لليوم الموافق {0}).
+                            &lt;/li&gt;
+                            &lt;li&gt;عندما يتم إضافة غياب للطلبة يتم تثبيته تلقائياً للتأكيد على متابعة المدرسة للحضور والغياب.
+                            &lt;/li&gt;
+                            &lt;li&gt;تستطيع إضافة أو تعديل مخالفات الانضباط المدرسي والالتزام بالدوام المدرسي للطلبة في اليوم الحالي فقط أو يوم الخميس، حيث تتمكن من إضافتها أو تعديلها لكافة أيام الأسبوع.
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/p&gt;
+&lt;br /&gt;</value>
+  </data>
+  <data name="CannotSaveAttendance" xml:space="preserve">
+    <value>لا يمكن إدخال أو تعديل الغياب لهذا اليوم</value>
+  </data>
+  <data name="DateOutOfActiveSemester" xml:space="preserve">
+    <value>التاريخ ليس ضمن بداية ونهاية الفصل</value>
+  </data>
+  <data name="ConfirmationFailedError_1" xml:space="preserve">
+    <value>لا يمكن تأكيد عدم وجود غياب لليوم المختار لوجود غياب مدخل.</value>
+  </data>
+  <data name="lblLecture.text" xml:space="preserve">
+    <value>الحصة</value>
+  </data>
+  <data name="rfvLecture.ErrorMessage" xml:space="preserve">
+    <value>اختر الحصة.</value>
+  </data>
+  <data name="lblquestionnaire.TEXT" xml:space="preserve">
+    <value>لتعبئة الاستبيان ,</value>
+  </data>
+  <data name="cbAgreement.Text" xml:space="preserve">
+    <value>أتعهد بصحة البيانات المدخلة ،وأتحمل كامل المسؤولية في حال كانت البيانات غير صحيحة</value>
+  </data>
+  <data name="CheckOnAgreement" xml:space="preserve">
+    <value>يرجى التعهد بصحة البيانات المدخله</value>
+  </data>
+  <data name="DegreeMuadabaCourseDesc.HeaderText" xml:space="preserve">
+    <value>نوع المستوى</value>
+  </data>
+  <data name="AbsenceHeaderText" xml:space="preserve">
+    <value>نوع الغياب </value>
+  </data>
+  <data name="ViolationHeaderText" xml:space="preserve">
+    <value>مخالفة </value>
+  </data>
+  <data name="CannotEditPreviousDay" xml:space="preserve">
+    <value> لا يمكن ادخال الغياب لايام سابقة</value>
+  </data>
+  <data name="CannotEdit" xml:space="preserve">
+    <value>لا يمكن تعديل على البيانات بعد ارسالها لمدير مديرية التعليم للاعتماد</value>
+  </data>
+  <data name="CannotEditt" xml:space="preserve">
+    <value>لا يمكن تعديل على البيانات بعد اعتمادها من قبل مدير مديرية التعليم </value>
+  </data>
+  <data name="ChooseViolationAbsence" xml:space="preserve">
+    <value>اختر نوع الغياب </value>
+  </data>
+  <data name="ChooseViolationText" xml:space="preserve">
+    <value>اختر نوع مخالفة</value>
+  </data>
+</root>
